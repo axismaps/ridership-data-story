@@ -1,9 +1,15 @@
-$(document).ready(function(){
-  console.log('HERE');
-  $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    items: 1
-})
+function resize() {
+    $('.slide-nav').width($('header').width());
+}
+
+$(document).ready(function () {
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 0,
+        nav: true,
+        navContainer: '.slide-nav',
+        dotsContainer: '.slide-dots',
+        items: 1
+    });
+    resize();
 });

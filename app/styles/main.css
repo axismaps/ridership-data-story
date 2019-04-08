@@ -25,6 +25,7 @@ h2{
 }
 
 header{
+  height: 100px;
   padding: 30px 30px 0;
   background-color: #593F95;
   color: white;
@@ -33,4 +34,35 @@ header{
 iframe{
   width: 100%;
   border: none;
+}
+
+.description{
+  color: #593F95;
+  font-weight: 600;
+  background-color: rgba(89,63,149,.2);
+  padding: 30px 100px;
+}
+
+.slide-nav{
+  position: absolute;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.slide-nav button{
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(89,63,149,.2);
+  color: white;
+  font-size: 40px;
+  line-height: 60px;
+  position: relative;
+  z-index: 999;
+}
+
+.slide-nav .owl-next{
+  float: right;
 }
