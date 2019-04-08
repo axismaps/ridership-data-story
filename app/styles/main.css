@@ -1,9 +1,8 @@
-iframe{
-  width: 600px;
-  border: none;
+body{
+  font-family: Mark, Arial, sans-serif;
 }
 
-.owl-item{
-  width: 600px;
-  height: 600px;
+iframe{
+  width: 100%;
+  border: none;
 }
