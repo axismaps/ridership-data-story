@@ -1,5 +1,33 @@
 body{
+  margin: 0;
   font-family: Mark, Arial, sans-serif;
+}
+
+h1, h2{
+  display: inline-block;
+  border: 10px solid white;
+  border-top: none;
+  padding: 0  30px 20px;
+  line-height: 30px;
+  margin: 0;
+  position: relative;
+}
+
+h1{
+  border-left: none;
+  padding-left: 0;
+  top: 3px;
+}
+
+h2{
+  border-right: none;
+  left: -15px;
+}
+
+header{
+  padding: 30px 30px 0;
+  background-color: #593F95;
+  color: white;
 }
 
 iframe{
