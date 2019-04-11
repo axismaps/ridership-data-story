@@ -1,5 +1,6 @@
 function resize() {
-  $('.slide-nav').width($('header').width());
+  $('.slide-nav').width($('header').width() + 20);
+  $('.owl-carousel, .owl-stage-outer').height($(window).height() - 140);
 }
 
 $(document).ready(() => {
@@ -17,7 +18,10 @@ $(document).ready(() => {
     iframe.attr('src', iframe.attr('data-src'));
     const prevFrame = $($('.item')[e.item.index - 1]).children('iframe');
     prevFrame.removeAttr('src');
+    resize();
   });
 
   resize();
 });
+
+$(window).resize(resize);
