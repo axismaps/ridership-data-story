@@ -12,7 +12,7 @@ $(document).ready(() => {
     callbacks: true,
   });
 
-  owl.on('changed.owl.carousel', function(e) {
+  owl.on('changed.owl.carousel', (e) => {
     const iframe = $($('.item')[e.item.index]).children('iframe');
     iframe.attr('src', iframe.attr('data-src'));
     const prevFrame = $($('.item')[e.item.index - 1]).children('iframe');
