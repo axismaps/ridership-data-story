@@ -1,5 +1,5 @@
 function resize() {
-  $('.slide-nav').width($('header').width() + 20);
+  $('.slide-nav').width($('header').width());
   $('.owl-carousel, .owl-stage-outer').height($(window).height() - 140);
   $('iframe').height($('.owl-carousel').height() - $('.owl-item.active .description').height() - 60);
 }
