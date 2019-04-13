@@ -1,84 +1,124 @@
 <!doctype html>
 <html lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ridership data story</title>
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <!-- Place favicon.ico in the root directory -->
-    <!-- build:css styles/main.css -->
-    <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
-    <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.theme.default.min.css" />
-    <link rel="stylesheet" href="styles/fonts.css">
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
-  </head>
-  <body>
-    <!--[if IE]>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ridership data story</title>
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="styles/fonts.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+</head>
+
+<body>
+  <!--[if IE]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <header>
-      <h1>TransitCenter</h1>
-      <h2>Ridership Data Viz Story</h2>
-    </header>
-    <div class="slide-nav"></div>
-    <div class="owl-carousel owl-theme">
-      <div class="item">
-        <div class="description">
-          <p>Transit ridership is often discussed as a “national trend” - but each transit agency has its own ridership story.</p>
-        </div>
-        <iframe data-src="https://insights.transitcenter.org/?embed=sidebar&sidebarView=sparklines&indicator=upt" src="https://insights.transitcenter.org/?embed=sidebar&sidebarView=sparklines&indicator=upt"></iframe>
+  <header>
+    <h1>TransitCenter</h1>
+    <h2>Intro to Transit Insights</h2>
+  </header>
+  <div class="slide-nav"></div>
+  <div class="owl-carousel owl-theme">
+    <div class="item">
+      <div class="description">
+        <p>Transit ridership is often discussed as a “national trend” - but each transit agency has its own ridership
+          story.</p>
       </div>
-      <div class="item">
-        <div class="description">
-          <p>Ridership at most transit agencies has declined in recent years, with important exceptions. Operational, service, and demographic characteristics help explain how and why ridership outcomes are different at Houston Metro, Maryland’s MTA, LA Metro, Seattle’s King County Metro, WMATA in DC and DART in Dallas.</p>
-        </div>
-        <iframe data-src="https://insights.transitcenter.org/?embed=sidebar&sidebarView=sparklines&indicator=upt&years=2012|2017&compared=59|75|37|10|35|32&expanded=true"></iframe>
-      </div>
-      <div class="item">
-        <div class="description">
-          <p>Bus ridership has grown in King County and Houston, where recent bus network redesigns improved route connections to rail, service frequency, and slow zones. Most agencies haven’t updated bus networks (and bus trips continue to drop). And a network redesign must be carefully implemented and may take time to show results; Maryland’s MTA redesigned a network in 2017 but has not grown bus ridership yet.</p>
-        </div>
-        <iframe data-src="https://insights.transitcenter.org/?embed=sidebar&sidebarView=pcp&indicator=upt|bus|rail|vrm|opexp_total&years=2012|2017&compared=59|75|37|10|35|32&selected=bus"></iframe>
-      </div>
-      <div class="item">
-        <div class="description">
-          <p>In 2016, residents of LA County and King County voted to expand agency funding through taxes. Operating expenses at both agencies have increased significantly, as a result.</p>
-        </div>
-        <iframe data-src="https://insights.transitcenter.org/?embed=sidebar&sidebarView=pcp&indicator=upt|bus|rail|vrm|opexp_total&years=2012|2017&compared=59|75|37|10|35|32&selected=opexp_total"></iframe>
-      </div>
-      <div class="item">
-        <div class="description">
-          <p>Expanding service is important to growing ridership, which LA Metro, DART of Dallas, and Houston Metro have done by building new rail lines since 2012.<br><br>In DC, WMATA has not substantially expanded or redesigned bus or rail service, and ridership has suffered on both.</p>
-        </div>
-        <iframe data-src="https://insights.transitcenter.org/?embed=sidebar&sidebarView=pcp&indicator=upt|bus|rail|vrm|opexp_total&years=2012|2017&compared=59|75|37|10|35|32&selected=rail"></iframe>
-      </div>
-      <div class="item">
-        <div class="description">
-          <p>And service must go through high-density areas so that many people can get to many destinations. DART’s paltry rail ridership growth compared to Houston Metro’s reflects rail placement in relatively low-density and low-growth areas.</p>
-        </div>
-        <iframe data-src="https://insights.transitcenter.org/?embed=msaAtlas&indicator=job_pop_density&msa=19100&years=2010|2012&bounds=-97.183|32.625|-96.526|32.97&dropdownsOff=true&polygons=4D9F96,32.759,-96.811,32.741,-96.784,32.687,-96.818,32.699,-96.848,32.759,-96.811|4D9F96,32.772,-96.824,32.772,-96.929,32.717,-96.931,32.717,-96.825,32.772,-96.824|C0768A,32.860,-96.884,32.816,-96.930,32.912,-97.063,32.948,-97.025,32.860,-96.884&labels=32.738,-97.013,In 2012 rail added to the lower-growth Northwest over the high-density high-growth South|32.921,-96.915,New rail segment as of 2012"></iframe>
-      </div>
-      <div class="item">
-        <div class="description">
-          <p>Demographic change also impacts transit ridership. In Portland, higher-income people have moved to transit-served neighborhoods, pushing lower-income people, who are more frequent transit riders, farther from transit.</p>
-        </div>
-        <iframe data-src="https://insights.transitcenter.org/?embed=msaAtlas&indicator=income&msa=38900&distanceFilter=0.25&bounds=-122.803|45.392|-122.379|45.649&dropdownsOff=true&polygons=C0768A,45.549,-122.703,45.549,-122.649,45.505,-122.648,45.505,-122.703,45.549,-122.703|4D9F96,45.545,-122.556,45.545,-122.479,45.492,-122.477,45.492,-122.556,45.545,-122.556&labels=45.578,-122.603,Income rising in the transit-rich urban core and falling farther east"></iframe>
-      </div>
-      <div class="item">
-        <div class="description">
-          <p>Now that you’ve seen some of the key features of the ridership visualization tool, explore the data yourself! You can also Compare different transit agencies or MSAs with each other, Export screenshots of the visualization, and Download the underlying data.</p>
-        </div>
+      <div class="content">
+        <iframe
+          data-src="https://insights.transitcenter.org/?embed=sidebar&sidebarView=sparklines&indicator=upt&expanded=true"
+          src="https://insights.transitcenter.org/?embed=sidebar&sidebarView=sparklines&indicator=upt&expanded=true"></iframe>
       </div>
     </div>
-    <div class="slide-dots"></div>
-    <!-- build:js scripts/vendor.js -->
-    <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
-    <!-- endbuild -->
-    <!-- build:js scripts/main.js -->
-    <script src="scripts/main.js"></script>
-    <!-- endbuild -->
-  </body>
+    <div class="item">
+      <div class="description">
+        <p>Ridership at most transit agencies has declined in recent years, with important exceptions. Operational,
+          service, and demographic characteristics help explain how and why ridership outcomes are different at Houston
+          Metro, Maryland’s MTA, LA Metro, Seattle’s King County Metro, WMATA in DC and DART in Dallas.</p>
+      </div>
+      <div class="content">
+        <iframe
+          data-src="https://insights.transitcenter.org/?embed=sidebar&sidebarView=sparklines&indicator=upt&years=2012|2017&compared=59|75|37|10|35|32&expanded=true"></iframe>
+      </div>
+    </div>
+    <div class="item">
+      <div class="description">
+        <p>Bus ridership has grown in King County and Houston, where recent bus network redesigns improved route
+          connections to rail, service frequency, and slow zones. Most agencies haven’t updated bus networks (and bus
+          trips continue to drop). And a network redesign must be carefully implemented and may take time to show
+          results; Maryland’s MTA redesigned a network in 2017 but has not grown bus ridership yet.</p>
+      </div>
+      <div class="content">
+        <iframe
+          data-src="https://insights.transitcenter.org/?embed=sidebar&sidebarView=pcp&indicator=upt|bus|rail|vrm|opexp_total&years=2012|2017&compared=59|75|37|10|35|32&selected=bus"></iframe>
+      </div>
+    </div>
+    <div class="item">
+      <div class="description">
+        <p>In 2016, residents of LA County and King County voted to expand agency funding through taxes. Operating
+          expenses at both agencies have increased significantly, as a result.</p>
+      </div>
+      <div class="content">
+        <iframe
+          data-src="https://insights.transitcenter.org/?embed=sidebar&sidebarView=pcp&indicator=upt|bus|rail|vrm|opexp_total&years=2012|2017&compared=59|75|37|10|35|32&selected=opexp_total"></iframe>
+      </div>
+    </div>
+    <div class="item">
+      <div class="description">
+        <p>Expanding service is important to growing ridership, which LA Metro, DART of Dallas, and Houston Metro have
+          done by building new rail lines since 2012.<br><br>In DC, WMATA has not substantially expanded or redesigned
+          bus or rail service, and ridership has suffered on both.</p>
+      </div>
+      <div class="content">
+        <iframe
+          data-src="https://insights.transitcenter.org/?embed=sidebar&sidebarView=pcp&indicator=upt|bus|rail|vrm|opexp_total&years=2012|2017&compared=59|75|37|10|35|32&selected=rail"></iframe>
+      </div>
+    </div>
+    <div class="item">
+      <div class="description">
+        <p>And service must go through high-density areas so that many people can get to many destinations. DART’s
+          paltry rail ridership growth compared to Houston Metro’s reflects rail placement in relatively low-density and
+          low-growth areas.</p>
+      </div>
+      <div class="content">
+        <iframe
+          data-src="https://insights.transitcenter.org/?embed=msaAtlas&indicator=job_pop_density&msa=19100&years=2010|2012&bounds=-97.183|32.625|-96.526|32.97&dropdownsOff=true&polygons=4D9F96,32.759,-96.811,32.741,-96.784,32.687,-96.818,32.699,-96.848,32.759,-96.811|4D9F96,32.772,-96.824,32.772,-96.929,32.717,-96.931,32.717,-96.825,32.772,-96.824|C0768A,32.860,-96.884,32.816,-96.930,32.912,-97.063,32.948,-97.025,32.860,-96.884&labels=32.738,-97.013,In 2012 rail added to the lower-growth Northwest over the high-density high-growth South|32.921,-96.915,New rail segment as of 2012"></iframe>
+      </div>
+    </div>
+    <div class="item">
+      <div class="description">
+        <p>Demographic change also impacts transit ridership. In Portland, higher-income people have moved to
+          transit-served neighborhoods, pushing lower-income people, who are more frequent transit riders, farther from
+          transit.</p>
+      </div>
+      <div class="content">
+        <iframe
+          data-src="https://insights.transitcenter.org/?embed=msaAtlas&indicator=income&msa=38900&distanceFilter=0.25&bounds=-122.803|45.392|-122.379|45.649&dropdownsOff=true&polygons=C0768A,45.549,-122.703,45.549,-122.649,45.505,-122.648,45.505,-122.703,45.549,-122.703|4D9F96,45.545,-122.556,45.545,-122.479,45.492,-122.477,45.492,-122.556,45.545,-122.556&labels=45.578,-122.603,Income rising in the transit-rich urban core and falling farther east"></iframe>
+      </div>
+    </div>
+    <div class="item">
+      <div class="description">
+        <p>Now that you’ve seen some of the key features of the ridership visualization tool, explore the data yourself!
+          You can also Compare different transit agencies or MSAs with each other, Export screenshots of the
+          visualization, and Download the underlying data.</p>
+      </div>
+    </div>
+  </div>
+  <div class="slide-dots"></div>
+  <!-- build:js scripts/vendor.js -->
+  <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+  <!-- endbuild -->
+  <!-- build:js scripts/main.js -->
+  <script src="scripts/main.js"></script>
+  <!-- endbuild -->
+</body>
+
 </html>
