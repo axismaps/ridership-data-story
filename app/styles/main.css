@@ -54,7 +54,7 @@ iframe{
 .description{
   color: #593F95;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 16px;
   background-color: rgba(89,63,149,.2);
   padding: 30px 150px;
 }
@@ -72,6 +72,12 @@ iframe{
   top: 150px;
   z-index: -1;
   opacity: .5;
+}
+
+.inner.final{
+  padding: 40px;
+  font-size: 24px;
+  font-weight: 600;
 }
 
 .slide-nav{
