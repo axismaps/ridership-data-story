@@ -21,6 +21,8 @@ $(document).ready(() => {
     iframe.attr('src', iframe.attr('data-src'));
     const prevFrame = $($('.item')[e.item.index - 1]).find('iframe');
     prevFrame.removeAttr('src');
+    if (e.item.index === e.item.count - 1) $('.slide-nav').hide();
+    else $('.slide-nav').show();
     window.setTimeout(resize, 100);
   });
 
