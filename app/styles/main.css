@@ -56,7 +56,8 @@ iframe{
   font-weight: 600;
   font-size: 16px;
   background-color: rgba(89,63,149,.2);
-  padding: 30px 150px;
+  padding: 10px 120px;
+  min-height: 120px;
 }
 
 .content{
