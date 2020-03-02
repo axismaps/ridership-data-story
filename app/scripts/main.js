@@ -2,7 +2,7 @@ function resize() {
   $('.slide-nav').width($('header').width());
   $('.owl-carousel, .owl-stage-outer').height($(window).height() - 140);
   $('.owl-item.active .content').height($('.owl-carousel').height() - $('.owl-item.active .description').height() - 60);
-  if (!$('.owl-item.active .content').position()) $('.owl-item.active .content > img').css('top', $('.owl-item.active .content').position().top);
+  if ($('.owl-item.active .content').position()) $('.owl-item.active .content > img').css('top', $('.owl-item.active .content').position().top);
   $('.owl-item.active .inner').css('max-height', $('.owl-item.active .content').height() - 20);
 }
 
